@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="淘宝, 店铺, 旺铺, 至上电瓶超市"/>
+        <meta name="keywords" content="欢迎前来淘宝网至上电瓶超市 旺铺，众多商品任你选购"/>
+        <meta name="microscope-data"
+              content="pageId=6836326;prototypeId=1;siteCategory=2;siteInstanceId=101369935;shopId=33803999;userId=41983231"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="referrer" content="always">
+		<title>至上电瓶超市</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<div class="banner_bg">
+				<div class="banner warp">
+					<ul id="pics">
+						<li><a href="#"><img src="img/banner1_02.jpg"/></a></li>
+						<li><a href="#"><img src="img/banner2_02.jpg"/></a></li>
+						<li><a href="#"><img src="img/banner1_02.jpg"/></a></li>
+						<li><a href="#"><img src="img/banner2_02.jpg"/></a></li>
+					</ul>
+				<div id="shuzi" class="clearfix">
+					<span class="on" onmouseover="setmouserOver(0)" onmouseout="setNextInterval= setInterval('setNext()',2000)"></span>
+					<span onmouseover="setmouserOver(1)" onmouseout="setNextInterval= setInterval('setNext()',2000)"></span>
+					<span onmouseover="setmouserOver(2)" onmouseout="setNextInterval= setInterval('setNext()',2000)"></span>
+					<span onmouseover="setmouserOver(3)" onmouseout="setNextInterval= setInterval('setNext()',2000)"></span>
+				</div>
+				</div>
+			</div>
+			<div class="nav_bg">
+				<div class="nav warp">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">热销</a></li>
+						<li><a href="#">型号</a></li>
+						<li><a href="#">品牌</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			
+		</div>
+		
+		<br />
+		<div class="div2">
+			<div class="div21">
+			    <div class="div22">
+			          搜索店内宝贝
+			    </div>
+			<br />
+			<div class="div23">
+				<form action="#" name="biaodan" method="post">
+				 <p>&nbsp;&nbsp;&nbsp;&nbsp;关键字:<input type="text" name="guanjianzi" class="j"></p>
+			      <br />
+			      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价格：<input type="text" name="jiage" class="h">到
+			     <input type="text" name="jiage" class="h"></p>
+			     <br />
+			    <p align="center"><input type="submit" value="搜索" class="j1"> </p>
+        
+				</form>
+				<br />
+				<div class="div22">
+					宝贝排行榜
+				</div>
+				<br />
+				<div>
+				<p align="center">
+				   <a herf="#" target="_blank">
+							<input type="button" value="本月热销排行" name="benyuepaihangbang"/>
+					</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+					<a herf="#" target="_blank">	
+							<input type="button" value="热门收藏排行" name="rmscph"/>
+					</a>
+				</p>
+				</div>
+				
+				<div class="fl">
+				<span>
+					<img src="./img/eisexqdk.bmp" width="145px" height="150px"/>
+				</span>
+				</div>
+				<br />
+				<div class="fr">
+					<p class="j3">进口松下汽车电瓶/蓄</p>
+				    <span class="j4">
+					&yen&nbsp;680.00
+				    </span>
+					<br />
+					<span>
+						<img src="">
+					</span>
+			    </div>
+			 </div>
+			</div>
+				<div class="div3">
+             <!--右半部分-->
+			<div class="div31">
+				<div class="div32">
+					掌柜推荐宝贝
+				</div>
+				<span class="y"><a herf="#"><input type="button" value="所有宝贝"></a></span>
+			</div><br />
+			<div class="div32">
+				新品上架
+			</div>
+			<div class="div34">
+		<span class="y1"><img src="./img/TB2M8_EXhAlyKJjSZFyXXbm_XXa_!!41983231.jpg_240x240.jpg" width="200px" height="330px"></span>
+		<span class="y1"><img src="./img/TB2M8_EXhAlyKJjSZFyXXbm_XXa_!!41983231.jpg_240x240.jpg" width="200px" height="330px"></span>	
+		<span class="y1"><img src="./img/TB2M8_EXhAlyKJjSZFyXXbm_XXa_!!41983231.jpg_240x240.jpg" width="200px" height="330px"></span>	
+		<span class="y1"><img src="./img/TB2M8_EXhAlyKJjSZFyXXbm_XXa_!!41983231.jpg_240x240.jpg" width="200px" height="330px"></span>	
+			</div>
+			</div>
+			</div>
+		
+		<script type="text/javascript">
+			var tags = document.getElementById("pics").getElementsByTagName("li");
+			var cats = document.getElementById("shuzi").getElementsByTagName("span");
+			function setNow(index){
+				for(var i=0;i<tags.length;i++){
+					tags[i].style.display="none";
+					cats[i].className=" ";
+				}
+				tags[index].style.display="block";
+				cats[index].className="on";
+			}
+			var current = 0;
+			function setNext(){
+				current++;
+				if(current>=tags.length){
+					current=0;
+				}
+				setNow(current);
+			}
+			var setNextInterval= setInterval("setNext()",2000);
+			function setmouserOver(index1){
+				clearInterval(setNextInterval);
+				current=index1;
+				setNow(current);
+			}
+		</script>
+			
+	</body>
+</html>
